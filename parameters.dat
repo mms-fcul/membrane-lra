@@ -1,0 +1,11 @@
+structure       = gros_deprot/002.gro
+epsin           = 4
+ionicstr        = 0.1
+pbc_dimensions  = 2
+ncpus           = -1
+pH              = -5,15
+sites_A         = 1N, 291, 292C
+output          = pkas_deprot/002.out
+clean_pdb       = False
+titration_output  = titrations_deprot/titration_002.txt
+ser_thr_titration = False

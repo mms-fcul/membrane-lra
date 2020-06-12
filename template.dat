@@ -1,0 +1,11 @@
+structure       = gros___STATE__/__GRONAME__.gro
+epsin           = 4
+ionicstr        = 0.1
+pbc_dimensions  = 2
+ncpus           = -1
+pH              = -5,15
+sites_A         = __SITES__
+output          = pkas___STATE__/__GRONAME__.out
+clean_pdb       = False
+titration_output  = titrations___STATE__/titration___GRONAME__.txt
+ser_thr_titration = False
