@@ -29,7 +29,7 @@ Apply an Henderson-Hasselbalch equation to the protonations obtained from the py
 
 ## Plot
 
-Generates
+Generates a lra.pdf plot with the titration curve of all states and the pKa value.
 
 ```
 gnuplot lra.plot
