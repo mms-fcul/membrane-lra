@@ -1,11 +1,16 @@
-structure       = gros_deprot/002.gro
-epsin           = 4
+structure       = gros_deprot/002.gro      ## __STATE__ and __GRONAME__ are reserved variables that will be replaced by lra.sh
+ncpus           = -1                                  ## to use all cores or specify a number of cpu cores available to your machine
+sites_A         = all                                 ## either specify the titrating residues as exemplified or calculate on “all” residues
+clean_pdb       = False                               ## True if your pdb file requires a pre-processing procedure to be compatible with PypKa
+
+## Output files
+output            = pkas_deprot/002.out                 # output pKa values will be ignored
+titration_output  = titrations_deprot/titration_002.txt # optional, but required for LRA calculations
+
+## Poisson-Boltzmann parameters
+epsin           = 4 
 ionicstr        = 0.1
 pbc_dimensions  = 2
-ncpus           = -1
+
+## Monte Carlo parameters
 pH              = -5,15
-sites_A         = 1N, 291, 292C
-output          = pkas_deprot/002.out
-clean_pdb       = False
-titration_output  = titrations_deprot/titration_002.txt
-ser_thr_titration = False

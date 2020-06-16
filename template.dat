@@ -1,11 +1,16 @@
-structure       = gros___STATE__/__GRONAME__.gro
-epsin           = 4
+structure       = gros___STATE__/__GRONAME__.gro      ## __STATE__ and __GRONAME__ are reserved variables that will be replaced by lra.sh
+ncpus           = -1                                  ## to use all cores or specify a number of cpu cores available to your machine
+sites_A         = all                                 ## either specify the titrating residues as exemplified or calculate on “all” residues
+clean_pdb       = False                               ## True if your pdb file requires a pre-processing procedure to be compatible with PypKa
+
+## Output files
+output            = pkas___STATE__/__GRONAME__.out                 # output pKa values will be ignored
+titration_output  = titrations___STATE__/titration___GRONAME__.txt # optional, but required for LRA calculations
+
+## Poisson-Boltzmann parameters
+epsin           = 4 
 ionicstr        = 0.1
 pbc_dimensions  = 2
-ncpus           = -1
+
+## Monte Carlo parameters
 pH              = -5,15
-sites_A         = __SITES__
-output          = pkas___STATE__/__GRONAME__.out
-clean_pdb       = False
-titration_output  = titrations___STATE__/titration___GRONAME__.txt
-ser_thr_titration = False

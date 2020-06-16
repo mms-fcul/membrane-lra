@@ -11,8 +11,8 @@ set style line  3 lt rgb "#000000" lw 3 pt 5 ps 1.0
 set xlabel "pH"
 set ylabel "pK units"
 
-set xrange [1.5:3.5]
-set yrange [1.5:3.5]
+set xrange [0:3]
+set yrange [0:3]
 
 set xtics 0,1
 set ytics 0,1
