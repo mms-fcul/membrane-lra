@@ -8,9 +8,9 @@ Adjust the sites variable to your protein
 - **template.dat** (file)
 Adjust the pypka variable to your liking
 
-    __STATE__ and __GRONAME__ are reserved variables that will be replaced by lra.sh. 
-    __STATE__ is the protonation state of the site of interest in structure;
-    __GRONAME__ is the gro filename found in gros___STATE__ folders
+    \_\_STATE\_\_ and \_\_GRONAME\_\_ are reserved variables that will be replaced by lra.sh. 
+    \_\_STATE\_\_ is the protonation state of the site of interest in structure;
+    \_\_GRONAME\_\_ is the gro filename found in gros\_\__STATE\_\_ folders
 
 - **lra.plot** (file)
 Adjust the xrange and yrange variables to include the desired pH range
