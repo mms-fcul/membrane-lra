@@ -1,7 +1,7 @@
-structure       = gros_deprot/002.gro      ## __STATE__ and __GRONAME__ are reserved variables that will be replaced by lra.sh
-ncpus           = -1                                  ## to use all cores or specify a number of cpu cores available to your machine
-sites_A         = all                                 ## either specify the titrating residues as exemplified or calculate on “all” residues
-clean_pdb       = False                               ## True if your pdb file requires a pre-processing procedure to be compatible with PypKa
+structure       = gros_deprot/002.gro      # __STATE__ and __GRONAME__ are reserved variables that will be replaced by lra.sh
+ncpus           = -1                       # to use all cores or specify a number of cpu cores available to your machine
+sites_A         = all                      # either specify the titrating residues (ex: '1N, 246, 292C')  or calculate on “all” residues
+clean_pdb       = False                    # True if your pdb file requires a pre-processing procedure to be compatible with PypKa
 
 ## Output files
 output            = pkas_deprot/002.out                 # output pKa values will be ignored
